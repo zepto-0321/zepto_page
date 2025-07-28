@@ -1,7 +1,7 @@
 var wasteWords = ["varを使って何が悪い!","石と意思が充実した毎日が幸せのカギ","これであと10年は戦える！ー匿名Sさん","marqeeタグを使いまくれ！！","男ならメモ帳一択だ！","男ならアセンブリだ！","SETP4 プルトニウムから出る放射線をベリリウムで反射させます"];
 onload = function(){
   var ww = document.getElementById("wasteWords");
-  ww.textContent = wastewords[getRandomInt(0,wasteWords.length)];
+  ww.textContent = wasteWords[getRandomInt(0,wasteWords.length)];
 }
 
 
