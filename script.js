@@ -31,11 +31,11 @@ onload = function(){
   var ww = document.getElementById("wasteWords");
   ww.textContent = wasteWords[getRandomInt(0,wasteWords.length)];
 
-  let senryu = document.getElementById("senryu");
+  let senryuElm = document.getElementById("senryu");
   let senryu5 = senryu[0][getRandomInt(0,senryu[0].length)];
   let senryu7 = senryu[1][getRandomInt(0,senryu[1].length)];
   let senryu52 = senryu[0][getRandomInt(0,senryu[0].length)];
-  senryu.textContent = senryu5+senryu7+senryu5;
+  senryuElm.textContent = senryu5+senryu7+senryu5;
   console.log("貴様ｯ!　見ているなﾂ!");
 }
 
