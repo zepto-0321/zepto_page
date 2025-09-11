@@ -35,7 +35,7 @@ onload = function(){
   let senryu5 = senryu[0][getRandomInt(0,senryu[0].length)];
   let senryu7 = senryu[1][getRandomInt(0,senryu[1].length)];
   let senryu52 = senryu[0][getRandomInt(0,senryu[0].length)];
-  senryuElm.textContent = senryu5+senryu7+senryu5;
+  senryuElm.textContent = senryu5+" "+senryu7+" "+senryu52;
   console.log("貴様ｯ!　見ているなﾂ!");
 }
 
