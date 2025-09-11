@@ -21,7 +21,7 @@ var wasteWords = [
   "ブルアカは一度やってみるべき",
 ];
 
-let = senryu[
+let senryu = [
   ["柿食えば","法隆寺","理論上","フクロウだ","てんぷら粉","@America","おいしいな","遣唐使","消費税","所得税","やりますねぇ","いとをかし","大切な","ハプニング","セル結合","5の精神","新時代","来たぞｺﾚ"],
   ["鐘が鳴るなり","1+1は","誕生日の","ハーブを添えて","暫定税率","罠(トラップ)カード","私の名前も"]
 ];
@@ -32,9 +32,9 @@ onload = function(){
   ww.textContent = wasteWords[getRandomInt(0,wasteWords.length)];
 
   let senryu = document.getElementById("senryu");
-  let senryu5 = sentyu[0][getRandomInt(0,senryu[0].length)];
-  let senryu7 = sentyu[1][getRandomInt(0,senryu[1].length)];
-  let senryu52 = sentyu[0][getRandomInt(0,senryu[0].length)];
+  let senryu5 = senryu[0][getRandomInt(0,senryu[0].length)];
+  let senryu7 = senryu[1][getRandomInt(0,senryu[1].length)];
+  let senryu52 = senryu[0][getRandomInt(0,senryu[0].length)];
   senryu.textContent = senryu5+senryu7+senryu5;
   console.log("貴様ｯ!　見ているなﾂ!");
 }
