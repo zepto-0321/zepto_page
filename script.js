@@ -31,7 +31,7 @@ onload = function(){
   var ww = document.getElementById("wasteWords");
   ww.textContent = wasteWords[getRandomInt(0,wasteWords.length)];
 
-  let senryu = document.getElementByid("senryu");
+  let senryu = document.getElementById("senryu");
   let senryu5 = sentyu[0][getRandomInt(0,senryu[0].length)];
   let senryu7 = sentyu[1][getRandomInt(0,senryu[1].length)];
   let senryu52 = sentyu[0][getRandomInt(0,senryu[0].length)];
