@@ -14,10 +14,11 @@ html {
 
 #app{
   display: flex; /*横並びにする*/
+  gap:15px
 }
 
 aside{
-  width:240px;
+  width:fit-content;
   flex-shrink:0; /*縮まないようにする*/
   background-color:#cccccc;
   display: flex;
