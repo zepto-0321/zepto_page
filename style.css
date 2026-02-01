@@ -3,7 +3,7 @@
 というか見ても意味ないから引き返すことね
 */
 .top{
-  background-color black;
+  background-color:black;
   color:white;
   font-size:40px;
 }
@@ -18,7 +18,8 @@ html {
 
 aside{
   width:240px;
-  background:#cccccc;
+  flex-shrink:0; /*縮まないようにする*/
+  background-color:#cccccc;
   display: flex;
   flex-direction: column;
   gap:12px;
