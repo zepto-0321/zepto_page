@@ -47,6 +47,7 @@ aside {
 }
 
 main {
+  margin-left :155px /*asideは可変幅だがここに渡せないのでだいたいの155pxを書いてるよ*/
   position:fixed;
   margin-top: 60px;   /*これもheaderの高さ*/
   margin-left: fit-content;
