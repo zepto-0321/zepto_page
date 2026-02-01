@@ -47,10 +47,10 @@ aside {
 }
 
 main {
-  margin-left :155px /*asideは可変幅だがここに渡せないのでだいたいの155pxを書いてるよ*/
-  position:fixed;
-  margin-top: 60px;   /*これもheaderの高さ*/
-  margin-left: fit-content;
+  position: fixed;
+  top: 60px;          /* ここもheaderの高さ */
+  left: 155px;        /* ←asideの想定幅でごまかす */
   height: calc(100vh - 60px);
   overflow-y: auto;
+  padding: 24px;
 }
