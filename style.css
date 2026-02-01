@@ -3,13 +3,20 @@
 というか見ても意味ないから引き返すことね
 */
 .top{
-  background-color:black;
+  background-color black;
   color:white;
   font-size:40px;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 #app{
-  display:flex; /*横並びにする*/
+  display: flex; /*横並びにする*/
+}
+
+aside{
+  display: flex;
+  flex-direction: column;
 }
