@@ -51,6 +51,7 @@ main {
   top: 60px;          /* ここもheaderの高さ */
   left: 155px;        /* ←asideの想定幅でごまかす */
   height: calc(100vh - 60px);
+  width: calc(100vw - 155px);
   overflow-y: auto;
   padding: 24px;
 }
