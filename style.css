@@ -50,6 +50,8 @@ main {
   position: fixed;
   top: 60px;          /* ここもheaderの高さ */
   left: 155px;        /* ←asideの想定幅でごまかす */
+  right:0px;
+  bottom:0px;
   height: calc(100vh - 60px);
   width: calc(100vw - 155px);
   overflow-y: auto;
