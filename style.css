@@ -17,6 +17,14 @@ html {
 }
 
 aside{
+  width:240px;
+  background:#cccccc;
   display: flex;
   flex-direction: column;
+  gap:12px;
+  height:100vh;
+}
+
+main{
+  flex:1;
 }
