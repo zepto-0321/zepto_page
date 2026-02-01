@@ -47,6 +47,7 @@ aside {
 }
 
 main {
+  position:fixed;
   margin-top: 60px;   /*これもheaderの高さ*/
   margin-left: fit-content;
   height: calc(100vh - 60px);
