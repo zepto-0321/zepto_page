@@ -2,6 +2,10 @@
 中身が少ないって？　どうでもいいんだよ
 というか見ても意味ないから引き返すことね
 */
+:root{
+  --aside-width: 155px /*ﾃﾞﾌｫﾙﾄ*/
+}
+
 .top{
   background-color:black;
   color:white;
@@ -35,7 +39,7 @@ aside {
   top: 60px;                 /* headerの高さ */
   left: 0;
   height: calc(100vh - 60px);
-  width: fit-content;
+  width: var(--aside-width)
   padding: 8px 12px;
 
   flex-shrink: 0;
@@ -49,12 +53,12 @@ aside {
 main {
   position: fixed;
   top: 60px;          /* ここもheaderの高さ */
-  left: 155px;        /* asideの想定幅でごまかす */
-  right:0px;
-  bottom:0px;
-  height: calc(100vh - 60px);
-  width: calc(100vw - 155px);
-  overflow-y: auto;
+  left:var(--aside-width);
+  right:0;
+  bottom:0;
+
+  height:calc(100vh - 60px);
+  overflow-y:aout;
   padding: 24px;
   box-sizing: border-box; /*下が見切れないようにする*/
 }
