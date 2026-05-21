@@ -23,6 +23,15 @@ header{
   background:black;
   color:white;
   font-size:40px;
+
+  height: var(--header-height); /* 高さを60pxに固定 */
+  box-sizing: border-box;
+  overflow: hidden;
+  
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  line-height: 1;
 }
 
 aside{
