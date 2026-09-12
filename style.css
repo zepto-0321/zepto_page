@@ -1,0 +1,68 @@
+:root{
+    --header-height: 60px;
+    --resizer-size: 10px;
+}
+
+@font-face {
+    font-family: "MisakiGothic2nd";
+    src: url("./fonts/misaki_gothic_2nd.ttf") format("TrueType");
+    font-display: swap;
+}
+
+html{
+    font-family: "MisakiGothic2nd";
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+body {
+    display: grid;
+
+    grid-template-areas:
+        "header header header"
+        "aside resizer main";
+
+    grid-template-columns: max-content  var(--resizer-size) 1fr;
+    grid-template-rows: var(--header-height) 1fr;
+
+    overflow: hidden;
+    height:100vh;
+    margin:0;
+}
+
+header {
+    grid-area: header;
+    height: var(--header-height);
+    font-size: calc( var(--header-height)*0.5);
+    background-color: black;
+    color:white;
+    text-indent: 8px;
+    line-height: calc( var(--header-height)*1.2 );
+}
+
+aside {
+    grid-area: aside;
+    background-color: #cccccc;
+    padding:8px;
+    line-height: 150%;
+}
+
+aside a{
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+main {
+    grid-area: main;
+    overflow: auto;
+    min-width: 0;
+    min-height: 0;
+}
+
+.resizer{
+    grid-area: resizer;
+    width: var(--resizer-size);
+    cursor: col-resize;
+    background-color: red;
+    z-index: 9999;
+}
