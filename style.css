@@ -59,10 +59,9 @@ main {
     min-height: 0;
 }
 
-.resizer{
+#resizer{
     grid-area: resizer;
     width: var(--resizer-size);
     cursor: col-resize;
-    background-color: red;
     z-index: 9999;
 }
