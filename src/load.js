@@ -1,5 +1,5 @@
 async function getData(name){
-    const res = await fetch(`../contents/${name}.txt`);
+    const res = await fetch(`./contents/${name}.txt`);
     return res.text();
 }
 
