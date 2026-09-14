@@ -45,6 +45,7 @@ aside {
     background-color: #cccccc;
     padding:8px;
     line-height: 150%;
+    min-width: 150px;
 }
 
 aside a{
