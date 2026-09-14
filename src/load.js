@@ -26,7 +26,7 @@ window.onload = async ()=>{
     sideD.forEach((txt,i) => {
         const elm = document.createElement("a");
         elm.textContent = txt;
-        elm.href =`/#${i}`;
+        elm.href =`#${i}`;
         elm.style.display="block";
         asideE.appendChild(elm);
     });
