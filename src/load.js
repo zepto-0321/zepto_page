@@ -1,3 +1,6 @@
+
+import {searchURL, getURL} from "./url.js"
+
 async function getData(name){
     const res = await fetch(`./contents/${name}.txt`);
     return res.text();
@@ -8,6 +11,7 @@ const splitBetween = (text,start,end)=> text.split(start)[1].split(end)[0].split
 
 const urlParams = new URLSearchParams(window.location.search);
 const contentTxt = urlParams.get("c") || "index"
+console.log(contentTxt);
 window.onload = async ()=>{
     const content = (await getData(contentTxt));
     const metaD = splitBetween(content,"/:",":/");
@@ -32,13 +36,28 @@ window.onload = async ()=>{
     });
 
     let headingCnt=0;
-    mainD.forEach(txt=> {
+    mainD.forEach(async txt=> {
         let elm;
         if(txt[0] === "#"){
             headingCnt++;
             elm = document.createElement("h3");
             elm.id=headingCnt;
             elm.textContent = txt.slice(1);
+
+        }else if(await searchURL(txt)){
+            elm = document.createElement("p");
+            const url =getURL(txt);
+            const urlIndex = txt.indexOf(url);
+
+            elm.append(
+                txt.slice(0,urlIndex),
+                Object.assign(document.createElement("a"),{
+                    textContent: url,
+                    href: url
+                }),
+                txt.slice(urlIndex + url.length)
+            );
+
         }else{
             elm = document.createElement("p");
             elm.textContent = txt;
