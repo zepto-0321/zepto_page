@@ -36,7 +36,7 @@ window.onload = async ()=>{
     });
 
     let headingCnt=0;
-    mainD.forEach(async txt=> {
+    for(const txt of mainD){
         let elm;
         if(txt[0] === "#"){
             headingCnt++;
@@ -58,10 +58,22 @@ window.onload = async ()=>{
                 txt.slice(urlIndex + url.length)
             );
 
+        }else if(txt[0] === "$"){
+            const sp = txt.split(" ");
+            const txtFile = sp[0].slice(1);
+            const desc = sp[1];
+            elm = document.createElement("a");
+            elm.href=`?c=${txtFile}`;
+            elm.textContent=desc;
+
+            console.log(txt,"$")
         }else{
             elm = document.createElement("p");
             elm.textContent = txt;
+
         }
+
+
         mainE.appendChild(elm);
-    });
+    }
 }
