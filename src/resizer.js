@@ -26,9 +26,8 @@ resizer.addEventListener("mousedown",()=>{
 document.addEventListener("mousemove",(e)=>{
     if(!dragging) return;
 
-    const width = Math.min( Math.max(e.clientX ,MIN) ,MAX); //clamp
+    const width = Math.max(Math.min( Math.max(e.clientX ,MIN) ,MAX),150); //clamp
     body.style.gridTemplateColumns = `${width}px 10px 1fr`
-    console.log(MIN);
 });
 
 document.addEventListener("mouseup",()=>{
