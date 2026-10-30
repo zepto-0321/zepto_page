@@ -20,4 +20,6 @@ DevToolのソースから確認してもらえるとどんな風に書いてる�
 #こんたくと
 X:https://x.com/zemyonpto
 Github:https://github.com/zepto-0321
+#日記
+$diary/d-2026 ここからどうぞ
 @/
